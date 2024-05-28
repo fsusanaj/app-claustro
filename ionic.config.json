@@ -1,0 +1,7 @@
+{
+  "name": "app-claustro",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
