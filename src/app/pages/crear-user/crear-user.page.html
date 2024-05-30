@@ -1,0 +1,86 @@
+<ion-header class="ion-no-border" [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title class="title" slot="end">CREAR USUARIO</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" [fullscreen]="true">
+  <h3>Crea una Cuenta</h3>
+  <p>Entre sus datos para crear una cuenta y disfruta de grandes beneficios y ganar puntos.</p>
+  <ion-list>
+    <ion-item>
+      <ion-input
+      type="text"
+        label="Nombre"
+        label-placement="floating"
+        fill="solid"
+        placeholder="Entre su Nombre"
+      ></ion-input>
+    </ion-item>
+    <br />
+
+    <ion-item>
+      <ion-input
+      type="text"
+        label="Apellidos"
+        label-placement="floating"
+        fill="solid"
+        placeholder="Entre sus Apellidos"
+      ></ion-input>
+    </ion-item>
+
+    <br />
+
+    <ion-item>
+      <ion-input
+      type="tel"
+        label="Telefono"
+        label-placement="floating"
+        fill="solid"
+        placeholder="Entre su Telefono"
+      ></ion-input>
+    </ion-item>
+
+    <br />
+
+    <ion-item>
+      <ion-input
+      type="email"
+        label="Email"
+        label-placement="floating"
+        fill="solid"
+        placeholder="Entre su Email"
+      ></ion-input>
+    </ion-item>
+    <br />
+
+
+    <ion-item>
+      <ion-input
+      type="password"
+        label="Password"
+        label-placement="floating"
+        fill="solid"
+        placeholder="Entre su Password"
+      ></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <br />
+
+
+  <ion-button
+    class="custom-button"
+    routerLink="/login"
+    expand="block"
+    shape="round"
+  >
+    Grear Usuario
+  </ion-button>
+
+
+</ion-content>

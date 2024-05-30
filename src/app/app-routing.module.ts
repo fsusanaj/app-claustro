@@ -5,8 +5,36 @@ const routes: Routes = [
 
   {
     path: '',
-    redirectTo: '',
+    redirectTo: 'publi',
     pathMatch: 'full'
+  },
+  {
+    path: 'inicio',
+    loadChildren: () => import('./pages/inicio/inicio.module').then( m => m.InicioPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
+  },
+  {
+    path: 'productos',
+    loadChildren: () => import('./pages/productos/productos.module').then( m => m.ProductosPageModule)
+  },
+  {
+    path: 'productos-clientes',
+    loadChildren: () => import('./pages/productos-clientes/productos-clientes.module').then( m => m.ProductosClientesPageModule)
+  },
+  {
+    path: 'publi',
+    loadChildren: () => import('./pages/publi/publi.module').then( m => m.PubliPageModule)
+  },
+  {
+    path: 'crear-user',
+    loadChildren: () => import('./pages/crear-user/crear-user.module').then( m => m.CrearUserPageModule)
   },
 
 ];
