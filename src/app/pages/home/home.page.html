@@ -1,13 +1,50 @@
-<ion-header [translucent]="true">
+<ion-header class="ion-no-border" [translucent]="true">
   <ion-toolbar>
-    <ion-title>home</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button color="primary" defaultHref="/"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title class="title" slot="end">HOME</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">home</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding" [fullscreen]="true">
+  <h1>BIENVENIDO</h1>
+  <h2>Fidel</h2>
+  <h3>Promociones</h3>
+  <ion-list>
+    <ion-item routerLink="/salud">
+      <ion-icon slot="start" color="danger" name="pulse-outline"></ion-icon>
+
+      SALUD
+    </ion-item>
+  </ion-list>
+
+
+  <ion-list>
+    <ion-item>
+      <ion-icon color="danger" slot="start" name="briefcase-outline"></ion-icon>
+
+      JURIDICO
+    </ion-item>
+  </ion-list>
+
+
+  <ion-list>
+    <ion-item routerLink="/cuidado-personal">
+      <ion-icon color="danger" slot="start" name="heart-outline"></ion-icon>
+
+      CUIDADO PERSONAL
+    </ion-item>
+  </ion-list>
+
+
+
+  <ion-list>
+    <ion-item>
+      <ion-icon color="danger" slot="start" name="restaurant-outline"></ion-icon>
+
+      RESTAURANTES
+    </ion-item>
+  </ion-list>
 </ion-content>
