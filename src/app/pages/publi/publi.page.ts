@@ -38,6 +38,7 @@ export class PubliPage implements OnInit, OnDestroy {
       } else {
         clearInterval(this.intervalId);
         this.router.navigate(['/inicio']);
+        console.log("Estoy Rediriguiendo");
       }
     }, interval);
   }
