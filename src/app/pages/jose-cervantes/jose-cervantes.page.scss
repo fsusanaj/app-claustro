@@ -1,0 +1,25 @@
+
+
+
+.title {
+  color: rgb(180, 76, 111);
+  font-weight: 700;
+  font-size: 15px;
+
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+
+
+
+
+.custom-button {
+  padding-top: 30px;
+  --background: rgb(180, 76, 111); /* Cambia esto al color que desees */
+  --color: #fff; /* Color del texto */
+}

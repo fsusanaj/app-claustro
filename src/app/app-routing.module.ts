@@ -44,6 +44,15 @@ const routes: Routes = [
     path: 'cuidado-personal',
     loadChildren: () => import('./pages/cuidado-personal/cuidado-personal.module').then( m => m.CuidadoPersonalPageModule)
   },
+  {
+    path: 'jerry-vela',
+    loadChildren: () => import('./pages/jerry-vela/jerry-vela.module').then( m => m.JerryVelaPageModule)
+  },
+  {
+    path: 'jose-cervantes',
+    loadChildren: () => import('./pages/jose-cervantes/jose-cervantes.module').then( m => m.JoseCervantesPageModule)
+  },
+  
 
 ];
 
