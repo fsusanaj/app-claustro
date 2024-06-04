@@ -52,6 +52,14 @@ const routes: Routes = [
     path: 'jose-cervantes',
     loadChildren: () => import('./pages/jose-cervantes/jose-cervantes.module').then( m => m.JoseCervantesPageModule)
   },
+  {
+    path: 'zarco',
+    loadChildren: () => import('./pages/zarco/zarco.module').then( m => m.ZarcoPageModule)
+  },
+  {
+    path: 'meza',
+    loadChildren: () => import('./pages/meza/meza.module').then( m => m.MezaPageModule)
+  },
   
 
 ];
