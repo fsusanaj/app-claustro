@@ -60,6 +60,22 @@ const routes: Routes = [
     path: 'meza',
     loadChildren: () => import('./pages/meza/meza.module').then( m => m.MezaPageModule)
   },
+  {
+    path: 'bienvenida',
+    loadChildren: () => import('./pages/bienvenida/bienvenida.module').then( m => m.BienvenidaPageModule)
+  },
+  {
+    path: 'oro',
+    loadChildren: () => import('./pages/oro/oro.module').then( m => m.OroPageModule)
+  },
+  {
+    path: 'diamante',
+    loadChildren: () => import('./pages/diamante/diamante.module').then( m => m.DiamantePageModule)
+  },
+  {
+    path: 'video',
+    loadChildren: () => import('./pages/video/video.module').then( m => m.VideoPageModule)
+  },
   
 
 ];

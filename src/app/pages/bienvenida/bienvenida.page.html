@@ -1,0 +1,37 @@
+<ion-header class="ion-no-border" [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title class="title" slot="end">BIENVENIDOS</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+<!--Contenido de Bienvenida-->
+
+
+
+
+  <ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button routerLink="/video">
+      <ion-icon color="danger" name="play-circle"></ion-icon>
+      Video Instructivo
+    </ion-tab-button>
+    <ion-tab-button routerLink="/oro">
+      <ion-icon color="danger" name="medal-outline"></ion-icon>
+      Membresía Oro
+    </ion-tab-button>
+    <ion-tab-button routerLink="/diamante">
+      <ion-icon color="danger" name="diamond-outline"></ion-icon>
+      Membresía diamanté
+    </ion-tab-button>
+
+  </ion-tab-bar>
+</ion-tabs>
+
+
+</ion-content>
