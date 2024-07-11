@@ -76,6 +76,10 @@ const routes: Routes = [
     path: 'video',
     loadChildren: () => import('./pages/video/video.module').then( m => m.VideoPageModule)
   },
+  {
+    path: 'noticias',
+    loadChildren: () => import('./pages/noticias/noticias.module').then( m => m.NoticiasPageModule)
+  },
   
 
 ];

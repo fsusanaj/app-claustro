@@ -8,35 +8,74 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content class="ion-padding" [fullscreen]="true">
+  <!--Contenido de Bienvenida Inicio -->
+  <!--CARD 1-->
+  <div routerLink="/noticias" class="cartas1">
+    <ion-tab-button tab="home">
+      <ion-icon name="megaphone"></ion-icon>
+      <ion-label>Noticias del Claustro</ion-label>
 
-<!--Contenido de Bienvenida Inicio -->
+    </ion-tab-button>
+  </div>
+
+  <!--CARD 2-->
+  <div  class="cartas2">
+    <ion-tab-button tab="home">
+      <ion-icon name="school"></ion-icon>
+      <ion-label>Próxima Investidura </ion-label>
+
+    </ion-tab-button>
+  </div>
+
+  <!--CARD 3-->
+  <div  class="cartas3">
+    <ion-tab-button tab="home">
+      <ion-icon name="megaphone"></ion-icon>
+      <ion-label>Noticias del Claustro</ion-label>
+
+    </ion-tab-button>
+  </div>
+
+  <!--CARD 4-->
+  <div  class="cartas4">
+    <ion-tab-button tab="home">
+      <ion-icon name="trophy"></ion-icon>
+      <ion-label>Doctores de Doctores</ion-label>
+
+    </ion-tab-button>
+  </div>
+
+  <!--CARD 5-->
+  <div  class="cartas5">
+    <ion-tab-button tab="home">
+      <ion-icon name="videocam"></ion-icon>
+      <ion-label>Nuestro Podcast</ion-label>
+
+    </ion-tab-button>
+  </div>
 
 
 
 
+  <!--Contenido de Bienvenida Final -->
 
+  <!--Carrucel de Promociones-->
 
-
-<!--Contenido de Bienvenida Final -->
   <ion-tabs>
-  <ion-tab-bar slot="bottom">
-    <ion-tab-button routerLink="/video">
-      <ion-icon color="danger" name="play-circle"></ion-icon>
-      Video Instructivo
-    </ion-tab-button>
-    <ion-tab-button routerLink="/oro">
-      <ion-icon color="danger" name="medal-outline"></ion-icon>
-      Membresía Oro
-    </ion-tab-button>
-    <ion-tab-button routerLink="/diamante">
-      <ion-icon color="danger" name="diamond-outline"></ion-icon>
-      Membresía Diamanté
-    </ion-tab-button>
-
-  </ion-tab-bar>
-</ion-tabs>
-
-
-
+    <ion-tab-bar class="ion-padding" slot="bottom">
+      <ion-tab-button routerLink="/video">
+        <ion-icon color="danger" name="play-circle"></ion-icon>
+        Video Instructivo
+      </ion-tab-button>
+      <ion-tab-button routerLink="/oro">
+        <ion-icon color="danger" name="medal-outline"></ion-icon>
+        Membresía Oro
+      </ion-tab-button>
+      <ion-tab-button routerLink="/diamante">
+        <ion-icon color="danger" name="diamond-outline"></ion-icon>
+        Membresía Diamanté
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
 </ion-content>
