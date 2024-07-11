@@ -8,6 +8,8 @@
   </ion-toolbar>
 </ion-header>
 
+<!--COMIENZO DEL CUERPO-->
+
 <ion-content class="ion-padding" [fullscreen]="true">
   <!--Contenido de Bienvenida Inicio -->
   <!--CARD 1-->
@@ -15,52 +17,45 @@
     <ion-tab-button tab="home">
       <ion-icon name="megaphone"></ion-icon>
       <ion-label>Noticias del Claustro</ion-label>
-
     </ion-tab-button>
   </div>
 
   <!--CARD 2-->
-  <div  class="cartas2">
+  <div routerLink="/investiduras" class="cartas2">
     <ion-tab-button tab="home">
       <ion-icon name="school"></ion-icon>
       <ion-label>Próxima Investidura </ion-label>
-
     </ion-tab-button>
   </div>
 
   <!--CARD 3-->
-  <div  class="cartas3">
-    <ion-tab-button tab="home">
-      <ion-icon name="megaphone"></ion-icon>
-      <ion-label>Noticias del Claustro</ion-label>
 
+  <div routerLink="/cursos" class="cartas3">
+    <ion-tab-button tab="home">
+      <ion-icon name="receipt-outline"></ion-icon>
+      <ion-label>Cursos</ion-label>
     </ion-tab-button>
   </div>
 
   <!--CARD 4-->
-  <div  class="cartas4">
+  <div routerLink="/doctores" class="cartas4">
     <ion-tab-button tab="home">
       <ion-icon name="trophy"></ion-icon>
       <ion-label>Doctores de Doctores</ion-label>
-
     </ion-tab-button>
   </div>
 
   <!--CARD 5-->
-  <div  class="cartas5">
+  <div routerLink="/doctorespodcast" class="cartas5">
     <ion-tab-button tab="home">
       <ion-icon name="videocam"></ion-icon>
       <ion-label>Nuestro Podcast</ion-label>
-
     </ion-tab-button>
   </div>
 
-
-
-
   <!--Contenido de Bienvenida Final -->
 
-  <!--Carrucel de Promociones-->
+  <!--Inicio Carrucel de Promociones-->
 
   <ion-tabs>
     <ion-tab-bar class="ion-padding" slot="bottom">

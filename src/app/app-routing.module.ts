@@ -80,6 +80,22 @@ const routes: Routes = [
     path: 'noticias',
     loadChildren: () => import('./pages/noticias/noticias.module').then( m => m.NoticiasPageModule)
   },
+  {
+    path: 'investiduras',
+    loadChildren: () => import('./pages/investiduras/investiduras.module').then( m => m.InvestidurasPageModule)
+  },
+  {
+    path: 'doctores',
+    loadChildren: () => import('./pages/doctores/doctores.module').then( m => m.DoctoresPageModule)
+  },
+  {
+    path: 'doctorespodcast',
+    loadChildren: () => import('./pages/doctorespodcast/doctorespodcast.module').then( m => m.DoctorespodcastPageModule)
+  },
+  {
+    path: 'cursos',
+    loadChildren: () => import('./pages/cursos/cursos.module').then( m => m.CursosPageModule)
+  },
   
 
 ];
